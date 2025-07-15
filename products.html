@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> suman | Product Listing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>🛍️ Product Store by Suman </h1></header>
+  <main>
+    <label>Filter:
+      <select id="filterCategory" onchange="renderProducts()">
+        <option value="all">All</option>
+        <option value="books">Books</option>
+        <option value="gadgets">Gadgets</option>
+      </select>
+    </label>
+    <label>Sort:
+      <select id="sortOrder" onchange="renderProducts()">
+        <option value="asc">Price: Low to High</option>
+        <option value="desc">Price: High to Low</option>
+      </select>
+    </label>
+    <div id="productContainer" class="product-grid"></div>
+  </main>
+  <script src="products.js"></script>
+</body>
+</html>
